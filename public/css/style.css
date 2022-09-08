@@ -1,10 +1,62 @@
 body{
   background-color: lightblue;
 }
-
 h1{
     color: darkblue;
     text-align: center;
+}
+.portal{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 20em;
+  width: 20%;
+}
+.portal > a{
+  text-decoration: none;
+  border-radius: 7px;
+  color: lightblue;
+  background: darkblue;
+  padding: 0.5em;
+  width: 50%;
+}
+.portal > a + a{
+  margin-left: 10px;
+}
+.login-form{
+  margin: 20% auto;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.login-form > input{
+  margin-top: 10px;
+}
+.login-form > input:last-of-type{
+  margin: 10px auto;
+  width: 50%;
+  padding: 2em;
+}
+.signup-form{
+  margin: 20% auto;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.signup-form > input{
+  margin-top: 10px;
+  height: 1.8em;
+}
+.signup-form > input:last-of-type{
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  color: lightblue;
+  background-color: darkblue;
+  border: none;
+  border-radius: 7px;
 }
 .todos-container{
   display: flex;
@@ -66,6 +118,9 @@ h1{
 .not{
     text-decoration: underline;
 }
+body > h2 + h2{
+  margin-top: 20px;
+}
 h2{
   text-align: center;
 }
@@ -75,4 +130,14 @@ form{
 body > div{
   padding: 1em;
   text-align: center;
+}
+.logout-button{
+  margin-top: 2em;
+}
+.logout-button > a{
+  text-decoration: none;
+  border-radius: 7px;
+  background: darkblue;
+  color: lightblue;
+  padding: 1em;
 }

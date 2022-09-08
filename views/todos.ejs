@@ -27,7 +27,7 @@
     </ul>
 
     <h2><%= user.userName %> has <%= left %> things left to do.</h2>
-
+    <h2>Add a task</h2>
     <form action="/todos/createTodo" method='POST'>
         <input type="text" placeholder="Enter Todo Item" name='todoItem'>
         <select name="priority">
@@ -44,7 +44,7 @@
         </select>
         <input type="submit">
     </form>
-    <div class="">
+    <div class="logout-button">
       <a href="/logout">Logout</a>
     </div>
 
